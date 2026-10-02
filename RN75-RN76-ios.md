@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 858.96 KB | 876.44 KB | 📈 +17.48 KB (+2.04%) |
+| **Total size** | 858.97 KB | 876.44 KB | 📈 +17.47 KB (+2.03%) |
 | **Modules** | 489 | 493 | +4 |
 | **Packages** | 19 | 19 | 0 |
 
@@ -14,12 +14,12 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.75.4 | 0.76.9 | +17.3 KB |
-| `@react-native/virtualized-lists` | 0.75.4 | 0.76.9 | +175 Bytes |
-| `@react-native/js-polyfills` | 0.75.4 | 0.76.9 | 0 Bytes |
+| `react-native` | 0.75.5 | 0.76.9 | +17.29 KB |
+| `@react-native/virtualized-lists` | 0.75.5 | 0.76.9 | +175 Bytes |
+| `@react-native/js-polyfills` | 0.75.5 | 0.76.9 | 0 Bytes |
 | `metro-runtime` | 0.80.12 | 0.81.5 | 0 Bytes |
-| `@react-native/assets-registry` | 0.75.4 | 0.76.9 | 0 Bytes |
-| `@react-native/normalize-colors` | 0.75.4 | 0.76.9 | 0 Bytes |
+| `@react-native/assets-registry` | 0.75.5 | 0.76.9 | 0 Bytes |
+| `@react-native/normalize-colors` | 0.75.5 | 0.76.9 | 0 Bytes |
 
 </details>
 
@@ -64,7 +64,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (54, net +11.47 KB)</summary>
+<summary>🔀 Changed modules (53, net +11.46 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -119,6 +119,6 @@
 | `node_modules/react-native/src/private/webapis/performance/Performance.js` | 3.92 KB | 3.94 KB | 📈 +17 Bytes |
 | `node_modules/react-native/Libraries/Text/TextNativeComponent.js` | 1.04 KB | 1.05 KB | 📈 +13 Bytes |
 
-_...and 4 more (use `--limit` to show more)._
+_...and 3 more (use `--limit` to show more)._
 
 </details>

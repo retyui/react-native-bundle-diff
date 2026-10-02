@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 865.91 KB | 865.42 KB | 📉 -505 Bytes (-0.06%) |
+| **Total size** | 865.91 KB | 865.43 KB | 📉 -495 Bytes (-0.06%) |
 | **Modules** | 486 | 493 | +7 |
 | **Packages** | 19 | 19 | 0 |
 
@@ -14,12 +14,12 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.74.7 | 0.75.4 | -561 Bytes |
-| `@react-native/js-polyfills` | 0.74.89 | 0.75.4 | +37 Bytes |
+| `react-native` | 0.74.7 | 0.75.5 | -551 Bytes |
+| `@react-native/js-polyfills` | 0.74.89 | 0.75.5 | +37 Bytes |
 | `react` | 18.2.0 | 18.3.1 | +12 Bytes |
-| `@react-native/virtualized-lists` | 0.74.89 | 0.75.4 | +7 Bytes |
-| `@react-native/assets-registry` | 0.74.89 | 0.75.4 | 0 Bytes |
-| `@react-native/normalize-colors` | 0.74.89 | 0.75.4 | 0 Bytes |
+| `@react-native/virtualized-lists` | 0.74.89 | 0.75.5 | +7 Bytes |
+| `@react-native/assets-registry` | 0.74.89 | 0.75.5 | 0 Bytes |
+| `@react-native/normalize-colors` | 0.74.89 | 0.75.5 | 0 Bytes |
 
 </details>
 
@@ -57,7 +57,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (67, net -6.64 KB)</summary>
+<summary>🔀 Changed modules (68, net -6.63 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -112,6 +112,6 @@
 | `node_modules/react-native/Libraries/Core/Devtools/parseHermesStack.js` | 936 Bytes | 963 Bytes | 📈 +27 Bytes |
 | `node_modules/react-native/Libraries/StyleSheet/processTransform.js` | 823 Bytes | 849 Bytes | 📈 +26 Bytes |
 
-_...and 17 more (use `--limit` to show more)._
+_...and 18 more (use `--limit` to show more)._
 
 </details>

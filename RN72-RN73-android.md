@@ -14,7 +14,7 @@
 
 | Package | Version | Size |
 | --- | --- | ---: |
-| `use-sync-external-store` | 1.6.0 | 694 Bytes |
+| `use-sync-external-store` | 1.7.0 | 694 Bytes |
 
 </details>
 

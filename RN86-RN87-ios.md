@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 865.85 KB | 865.46 KB | 📉 -394 Bytes (-0.04%) |
+| **Total size** | 865.86 KB | 865.32 KB | 📉 -552 Bytes (-0.06%) |
 | **Modules** | 537 | 537 | 0 |
 | **Packages** | 21 | 19 | -2 |
 
@@ -34,10 +34,10 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.86.3 | 0.87.1 | +7.7 KB |
+| `react-native` | 0.86.3 | 0.87.1 | +7.68 KB |
 | `@react-native/virtualized-lists` | 0.86.3 | 0.87.1 | +96 Bytes |
 | `@react-native/js-polyfills` | 0.86.3 | 0.87.1 | 0 Bytes |
-| `metro-runtime` | 0.84.6 | 0.87.0 | 0 Bytes |
+| `metro-runtime` | 0.84.6 | 0.87.1 | 0 Bytes |
 | `@react-native/new-app-screen` | 0.86.3 | 0.87.1 | 0 Bytes |
 | `@react-native/normalize-colors` | 0.86.3 | 0.87.1 | 0 Bytes |
 
@@ -98,7 +98,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (65, net +4.33 KB)</summary>
+<summary>🔀 Changed modules (63, net +4.18 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -133,7 +133,6 @@
 | `node_modules/react-native/Libraries/Performance/Systrace.js` | 771 Bytes | 932 Bytes | 📈 +161 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/oldstylecollections/NodeList.js` | 994 Bytes | 1.12 KB | 📈 +154 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/events/internals/EventTargetInternals.js` | 510 Bytes | 664 Bytes | 📈 +154 Bytes |
-| `App.tsx` | 549 Bytes | 684 Bytes | 📈 +135 Bytes |
 | `node_modules/react-native/src/private/setup/setUpDOM.js` | 1.05 KB | 1.18 KB | 📈 +130 Bytes |
 | `node_modules/react-native/Libraries/Core/setUpGlobals.js` | 221 Bytes | 348 Bytes | 📈 +127 Bytes |
 | `node_modules/react-native/Libraries/Animated/AnimatedImplementation.js` | 4.73 KB | 4.84 KB | 📈 +117 Bytes |
@@ -152,7 +151,8 @@
 | `node_modules/react-native/Libraries/PermissionsAndroid/PermissionsAndroid.js` | 3.82 KB | 3.88 KB | 📈 +63 Bytes |
 | `node_modules/react-native/Libraries/Image/AssetSourceResolver.js` | 2.35 KB | 2.41 KB | 📈 +61 Bytes |
 | `node_modules/react-native/Libraries/ReactNative/AppRegistryImpl.js` | 2.94 KB | 2.9 KB | 📉 -46 Bytes |
+| `node_modules/react-native/Libraries/Blob/Blob.js` | 985 Bytes | 1.01 KB | 📈 +45 Bytes |
 
-_...and 15 more (use `--limit` to show more)._
+_...and 13 more (use `--limit` to show more)._
 
 </details>

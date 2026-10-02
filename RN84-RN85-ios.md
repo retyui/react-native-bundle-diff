@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 967.66 KB | 972.03 KB | 📈 +4.37 KB (+0.45%) |
+| **Total size** | 967.67 KB | 972.04 KB | 📈 +4.37 KB (+0.45%) |
 | **Modules** | 516 | 525 | +9 |
 | **Packages** | 21 | 21 | 0 |
 

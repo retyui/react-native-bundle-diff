@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 871.02 KB | 870.98 KB | 📉 -46 Bytes (-0.01%) |
+| **Total size** | 871.03 KB | 870.83 KB | 📉 -204 Bytes (-0.02%) |
 | **Modules** | 540 | 540 | 0 |
 | **Packages** | 21 | 19 | -2 |
 
@@ -34,10 +34,10 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.86.3 | 0.87.1 | +8.04 KB |
+| `react-native` | 0.86.3 | 0.87.1 | +8.02 KB |
 | `@react-native/virtualized-lists` | 0.86.3 | 0.87.1 | +96 Bytes |
 | `@react-native/js-polyfills` | 0.86.3 | 0.87.1 | 0 Bytes |
-| `metro-runtime` | 0.84.6 | 0.87.0 | 0 Bytes |
+| `metro-runtime` | 0.84.6 | 0.87.1 | 0 Bytes |
 | `@react-native/new-app-screen` | 0.86.3 | 0.87.1 | 0 Bytes |
 | `@react-native/normalize-colors` | 0.86.3 | 0.87.1 | 0 Bytes |
 
@@ -102,7 +102,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (68, net +4.67 KB)</summary>
+<summary>🔀 Changed modules (66, net +4.52 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -138,7 +138,6 @@
 | `node_modules/react-native/Libraries/Performance/Systrace.js` | 771 Bytes | 932 Bytes | 📈 +161 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/oldstylecollections/NodeList.js` | 994 Bytes | 1.12 KB | 📈 +154 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/events/internals/EventTargetInternals.js` | 510 Bytes | 664 Bytes | 📈 +154 Bytes |
-| `App.tsx` | 549 Bytes | 684 Bytes | 📈 +135 Bytes |
 | `node_modules/react-native/src/private/setup/setUpDOM.js` | 1.05 KB | 1.18 KB | 📈 +130 Bytes |
 | `node_modules/react-native/Libraries/Core/setUpGlobals.js` | 221 Bytes | 348 Bytes | 📈 +127 Bytes |
 | `node_modules/react-native/Libraries/Animated/AnimatedImplementation.js` | 4.73 KB | 4.84 KB | 📈 +117 Bytes |
@@ -156,7 +155,8 @@
 | `node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeStatusBarManagerAndroid.js` | 814 Bytes | 744 Bytes | 📉 -70 Bytes |
 | `node_modules/react-native/Libraries/Blob/FileReader.js` | 3.41 KB | 3.48 KB | 📈 +69 Bytes |
 | `node_modules/react-native/Libraries/PermissionsAndroid/PermissionsAndroid.js` | 4 KB | 4.06 KB | 📈 +63 Bytes |
+| `node_modules/react-native/Libraries/Image/AssetSourceResolver.js` | 2.43 KB | 2.49 KB | 📈 +61 Bytes |
 
-_...and 18 more (use `--limit` to show more)._
+_...and 16 more (use `--limit` to show more)._
 
 </details>

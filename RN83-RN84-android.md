@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 1007.7 KB | 975.14 KB | 📉 -32.56 KB (-3.23%) |
+| **Total size** | 1007.72 KB | 975.15 KB | 📉 -32.57 KB (-3.23%) |
 | **Modules** | 529 | 519 | -10 |
 | **Packages** | 21 | 21 | 0 |
 
@@ -57,7 +57,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (250, net -24.61 KB)</summary>
+<summary>🔀 Changed modules (250, net -24.62 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -78,9 +78,9 @@
 | `node_modules/react-native/Libraries/Components/Pressable/Pressable.js` | 3.77 KB | 3.34 KB | 📉 -434 Bytes |
 | `node_modules/react-native/Libraries/Animated/AnimatedImplementation.js` | 5.12 KB | 4.73 KB | 📉 -395 Bytes |
 | `node_modules/react-native/Libraries/Utilities/createPerformanceLogger.js` | 2.58 KB | 2.2 KB | 📉 -387 Bytes |
+| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 2.68 KB | 2.33 KB | 📉 -362 Bytes |
 | `node_modules/react-native/src/private/animated/createAnimatedPropsHook.js` | 3.06 KB | 2.71 KB | 📉 -361 Bytes |
 | `node_modules/react-native/Libraries/Core/Timers/JSTimers.js` | 3.72 KB | 3.37 KB | 📉 -360 Bytes |
-| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 2.66 KB | 2.32 KB | 📉 -354 Bytes |
 | `node_modules/@react-native/virtualized-lists/Lists/VirtualizedSectionList.js` | 7.03 KB | 6.69 KB | 📉 -351 Bytes |
 | `node_modules/react-native/Libraries/Blob/URLSearchParams.js` | 2.4 KB | 2.1 KB | 📉 -310 Bytes |
 | `node_modules/react-native/Libraries/Core/ExceptionsManager.js` | 2.74 KB | 2.44 KB | 📉 -308 Bytes |

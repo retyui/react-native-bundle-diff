@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 859.52 KB | 858.96 KB | 📉 -569 Bytes (-0.06%) |
+| **Total size** | 859.52 KB | 858.97 KB | 📉 -559 Bytes (-0.06%) |
 | **Modules** | 482 | 489 | +7 |
 | **Packages** | 19 | 19 | 0 |
 
@@ -14,12 +14,12 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.74.7 | 0.75.4 | -625 Bytes |
-| `@react-native/js-polyfills` | 0.74.89 | 0.75.4 | +37 Bytes |
+| `react-native` | 0.74.7 | 0.75.5 | -615 Bytes |
+| `@react-native/js-polyfills` | 0.74.89 | 0.75.5 | +37 Bytes |
 | `react` | 18.2.0 | 18.3.1 | +12 Bytes |
-| `@react-native/virtualized-lists` | 0.74.89 | 0.75.4 | +7 Bytes |
-| `@react-native/assets-registry` | 0.74.89 | 0.75.4 | 0 Bytes |
-| `@react-native/normalize-colors` | 0.74.89 | 0.75.4 | 0 Bytes |
+| `@react-native/virtualized-lists` | 0.74.89 | 0.75.5 | +7 Bytes |
+| `@react-native/assets-registry` | 0.74.89 | 0.75.5 | 0 Bytes |
+| `@react-native/normalize-colors` | 0.74.89 | 0.75.5 | 0 Bytes |
 
 </details>
 
@@ -57,7 +57,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (66, net -6.7 KB)</summary>
+<summary>🔀 Changed modules (67, net -6.69 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -112,6 +112,6 @@
 | `node_modules/react-native/Libraries/StyleSheet/processTransform.js` | 823 Bytes | 849 Bytes | 📈 +26 Bytes |
 | `node_modules/react-native/Libraries/NewAppScreen/components/LearnMoreLinks.js` | 2.96 KB | 2.93 KB | 📉 -23 Bytes |
 
-_...and 16 more (use `--limit` to show more)._
+_...and 17 more (use `--limit` to show more)._
 
 </details>

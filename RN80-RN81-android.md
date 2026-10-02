@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 950.82 KB | 968.64 KB | 📈 +17.82 KB (+1.87%) |
+| **Total size** | 950.82 KB | 968.66 KB | 📈 +17.84 KB (+1.88%) |
 | **Modules** | 507 | 516 | +9 |
 | **Packages** | 20 | 21 | +1 |
 
@@ -14,7 +14,7 @@
 
 | Package | Version | Size |
 | --- | --- | ---: |
-| `react-native-safe-area-context` | 5.9.1 | 6.13 KB |
+| `react-native-safe-area-context` | 5.10.1 | 6.15 KB |
 
 </details>
 
@@ -39,11 +39,11 @@
 ### 📄 Modules
 
 <details>
-<summary>🆕 Added modules (17, +14.45 KB)</summary>
+<summary>🆕 Added modules (17, +14.47 KB)</summary>
 
 | Module | Size |
 | --- | ---: |
-| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 2.66 KB |
+| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 2.68 KB |
 | `node_modules/react-native/src/private/webapis/performance/ResourceTiming.js` | 2.53 KB |
 | `node_modules/react-native/src/private/webapis/errors/DOMException.js` | 2.2 KB |
 | `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.74 KB |

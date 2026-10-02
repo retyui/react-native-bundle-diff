@@ -3,31 +3,25 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 865.46 KB | 851.98 KB | 📉 -13.49 KB (-1.56%) |
-| **Modules** | 537 | 531 | -6 |
-| **Packages** | 19 | 18 | -1 |
+| **Total size** | 865.32 KB | 871.52 KB | 📈 +6.2 KB (+0.72%) |
+| **Modules** | 537 | 538 | +1 |
+| **Packages** | 19 | 19 | 0 |
 
 ### 📦 Packages
 
 <details>
-<summary>➖ Removed packages (1)</summary>
-
-| Package | Version | Size |
-| --- | --- | ---: |
-| `@react-native/new-app-screen` | 0.87.1 | 6.28 KB |
-
-</details>
-
-<details>
-<summary>🔄 Version changes (5)</summary>
+<summary>🔄 Version changes (8)</summary>
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.87.1 | 0.88.0-rc.0 | -9.59 KB |
-| `@react-native/virtualized-lists` | 0.87.1 | 0.88.0-rc.0 | +601 Bytes |
-| `@react-native/normalize-colors` | 0.87.1 | 0.88.0-rc.0 | +165 Bytes |
-| `@react-native/js-polyfills` | 0.87.1 | 0.88.0-rc.0 | 0 Bytes |
-| `@react-native/asset-utils` | 0.87.1 | 0.88.0-rc.0 | 0 Bytes |
+| `react-native` | 0.87.1 | 0.88.0-rc.3 | +5.55 KB |
+| `react` | 19.2.3 | 19.3.0 | +343 Bytes |
+| `@react-native/normalize-colors` | 0.87.1 | 0.88.0-rc.3 | +165 Bytes |
+| `@react-native/virtualized-lists` | 0.87.1 | 0.88.0-rc.3 | +160 Bytes |
+| `@react-native/js-polyfills` | 0.87.1 | 0.88.0-rc.3 | 0 Bytes |
+| `@react-native/asset-utils` | 0.87.1 | 0.88.0-rc.3 | 0 Bytes |
+| `@react-native/new-app-screen` | 0.87.1 | 0.88.0-rc.3 | 0 Bytes |
+| `scheduler` | 0.27.0 | 0.28.0 | 0 Bytes |
 
 </details>
 
@@ -54,37 +48,30 @@
 </details>
 
 <details>
-<summary>🗑️ Removed modules (16, -13.2 KB)</summary>
+<summary>🗑️ Removed modules (9, -6.28 KB)</summary>
 
 | Module | Size |
 | --- | ---: |
-| `node_modules/@react-native/new-app-screen/src/NewAppScreen.js` | 3.2 KB |
 | `node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js` | 2.65 KB |
-| `node_modules/@react-native/new-app-screen/src/Links.js` | 1.27 KB |
 | `node_modules/react-native/src/private/setup/setUpPerformanceModern.js` | 1.11 KB |
-| `node_modules/@react-native/new-app-screen/src/Theme.js` | 1.1 KB |
 | `node_modules/react-native/Libraries/Modal/NativeModalManager.js` | 820 Bytes |
 | `node_modules/react-native/src/private/specs_DEPRECATED/modules/NativeModalManager.js` | 613 Bytes |
 | `node_modules/react-native/Libraries/Pressability/HoverState.js` | 468 Bytes |
 | `node_modules/react-native/src/private/webapis/performance/internals/Utilities.js` | 360 Bytes |
-| `node_modules/react-native/Libraries/Core/Devtools/getDevServer.js` | 340 Bytes |
-| `node_modules/@react-native/new-app-screen/src/assets/react-light.png` | 269 Bytes |
-| `node_modules/@react-native/new-app-screen/src/assets/react-dark.png` | 268 Bytes |
-| `node_modules/react-native/Libraries/Core/Devtools/openURLInBrowser.js` | 244 Bytes |
 | `node_modules/react-native/Libraries/Core/setUpPerformance.js` | 236 Bytes |
-| `node_modules/@react-native/new-app-screen/src/index.js` | 199 Bytes |
-| `node_modules/react-native/src/asset-registry.js` | 153 Bytes |
+| `node_modules/react-native/Libraries/Core/InitializeCore.js` | 51 Bytes |
+| `node_modules/react-native/Libraries/ReactPrivate/ReactNativePrivateInitializeCore.js` | 38 Bytes |
 
 </details>
 
 <details>
-<summary>🔀 Changed modules (95, net -10.63 KB)</summary>
+<summary>🔀 Changed modules (98, net +2.15 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
+| `node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-prod.js` | 117.4 KB | 130.81 KB | 📈 +13.41 KB |
 | `node_modules/react-native/Libraries/Components/TextInput/TextInput.js` | 9.39 KB | 7.34 KB | 📉 -2.06 KB |
 | `node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.js` | 4.75 KB | 2.8 KB | 📉 -1.94 KB |
-| `App.tsx` | 684 Bytes | 2.3 KB | 📈 +1.63 KB |
 | `node_modules/react-native/Libraries/Animated/nodes/AnimatedNode.js` | 2.38 KB | 3.75 KB | 📈 +1.37 KB |
 | `node_modules/react-native/Libraries/Components/ScrollView/ScrollViewNativeComponent.js` | 3.47 KB | 2.22 KB | 📉 -1.26 KB |
 | `node_modules/react-native/Libraries/Animated/nodes/AnimatedValue.js` | 5.13 KB | 4.12 KB | 📉 -1.01 KB |
@@ -94,19 +81,21 @@
 | `node_modules/react-native/Libraries/Image/ImageViewNativeComponent.js` | 2.2 KB | 1.43 KB | 📉 -791 Bytes |
 | `node_modules/react-native/Libraries/ReactNative/BridgelessUIManager.js` | 4 KB | 3.24 KB | 📉 -779 Bytes |
 | `node_modules/react-native/Libraries/Animated/components/AnimatedScrollView.js` | 1.55 KB | 830 Bytes | 📉 -762 Bytes |
-| `node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js` | 1.94 KB | 1.2 KB | 📉 -762 Bytes |
 | `node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js` | 14.84 KB | 14.19 KB | 📉 -666 Bytes |
 | `node_modules/react-native/Libraries/Alert/Alert.js` | 1.51 KB | 907 Bytes | 📉 -639 Bytes |
 | `node_modules/react-native/Libraries/Pressability/Pressability.js` | 10.51 KB | 9.89 KB | 📉 -636 Bytes |
 | `node_modules/react-native/Libraries/Components/Pressable/useAndroidRippleForView.js` | 1.35 KB | 756 Bytes | 📉 -623 Bytes |
 | `node_modules/react-native/Libraries/Components/Switch/Switch.js` | 2.22 KB | 1.67 KB | 📉 -567 Bytes |
-| `node_modules/@react-native/virtualized-lists/Lists/VirtualizedList.js` | 28.1 KB | 28.56 KB | 📈 +470 Bytes |
+| `node_modules/@react-native/virtualized-lists/Lists/VirtualizedList.js` | 28.1 KB | 28.58 KB | 📈 +484 Bytes |
+| `node_modules/@react-native/virtualized-lists/Lists/VirtualizeUtils.js` | 2.22 KB | 1.77 KB | 📉 -455 Bytes |
 | `node_modules/react-native/src/private/renderer/events/LegacySyntheticEvent.js` | 1.36 KB | 963 Bytes | 📉 -426 Bytes |
 | `node_modules/react-native/Libraries/Components/Button.js` | 2.67 KB | 2.28 KB | 📉 -394 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/events/Event.js` | 2.75 KB | 3.13 KB | 📈 +391 Bytes |
 | `node_modules/react-native/Libraries/Modal/Modal.js` | 3.54 KB | 3.19 KB | 📉 -358 Bytes |
 | `node_modules/react-native/Libraries/Linking/Linking.js` | 1.72 KB | 1.38 KB | 📉 -351 Bytes |
+| `node_modules/react/cjs/react.production.js` | 7.5 KB | 7.83 KB | 📈 +343 Bytes |
 | `node_modules/react-native/Libraries/Components/StatusBar/StatusBar.js` | 3.7 KB | 3.41 KB | 📉 -297 Bytes |
+| `node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags.js` | 13.95 KB | 14.19 KB | 📈 +247 Bytes |
 | `node_modules/react-native/src/private/animated/createAnimatedPropsHook.js` | 2.71 KB | 2.91 KB | 📈 +208 Bytes |
 | `node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js` | 4.27 KB | 4.08 KB | 📉 -191 Bytes |
 | `node_modules/react-native/Libraries/Components/View/ReactNativeStyleAttributes.js` | 4.07 KB | 4.25 KB | 📈 +186 Bytes |
@@ -117,8 +106,8 @@
 | `node_modules/react-native/index.js` | 6.38 KB | 6.5 KB | 📈 +127 Bytes |
 | `node_modules/react-native/Libraries/StyleSheet/PlatformColorValueTypes.ios.js` | 855 Bytes | 971 Bytes | 📈 +116 Bytes |
 | `node_modules/react-native/Libraries/StyleSheet/processBackgroundImage.js` | 6.87 KB | 6.98 KB | 📈 +108 Bytes |
+| `node_modules/react-native/src/react-private-interface.js` | 1.32 KB | 1.43 KB | 📈 +107 Bytes |
 | `node_modules/@react-native/virtualized-lists/Lists/ListMetricsAggregator.js` | 3.66 KB | 3.77 KB | 📈 +104 Bytes |
-| `node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags.js` | 13.95 KB | 14.05 KB | 📈 +100 Bytes |
 | `node_modules/react-native/Libraries/Components/TextInput/InputAccessoryView.js` | 1.1 KB | 1.01 KB | 📉 -90 Bytes |
 | `node_modules/react-native/Libraries/Components/Touchable/Touchable.js` | 8.49 KB | 8.41 KB | 📉 -84 Bytes |
 | `node_modules/react-native/Libraries/Components/ScrollView/processDecelerationRate.js` | 263 Bytes | 185 Bytes | 📉 -78 Bytes |
@@ -130,9 +119,7 @@
 | `node_modules/react-native/Libraries/ReactNative/getNativeComponentAttributes.js` | 1.99 KB | 2.05 KB | 📈 +59 Bytes |
 | `node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.js` | 685 Bytes | 626 Bytes | 📉 -59 Bytes |
 | `node_modules/react-native/Libraries/Animated/animations/SpringAnimation.js` | 5.02 KB | 5.07 KB | 📈 +58 Bytes |
-| `node_modules/react-native/Libraries/Animated/animations/TimingAnimation.js` | 2.96 KB | 3.01 KB | 📈 +58 Bytes |
-| `node_modules/react-native/Libraries/Image/Image.ios.js` | 3.17 KB | 3.22 KB | 📈 +57 Bytes |
 
-_...and 45 more (use `--limit` to show more)._
+_...and 48 more (use `--limit` to show more)._
 
 </details>

@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 977.38 KB | 1007.7 KB | 📈 +30.32 KB (+3.1%) |
+| **Total size** | 977.4 KB | 1007.72 KB | 📈 +30.32 KB (+3.1%) |
 | **Modules** | 517 | 529 | +12 |
 | **Packages** | 21 | 21 | 0 |
 
