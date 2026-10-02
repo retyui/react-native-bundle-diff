@@ -1,4 +1,18 @@
-# react-native-bundle-diff
+# React Native Bundle Diffs
+
+> [!TIP]
+> Every number and report in this repo was generated with **[react-native-bundle-discovery](https://github.com/retyui/react-native-bundle-discovery)**, simple tooling that helps React Native devs explore bundle size 📦, spot heavy packages, and inspect module/code structure.
+>
+> - 🔌 **Metro serializer plugin** writes a JSON stats report on every build
+> - 🔍 **`compare`** diffs two builds and shows added/removed modules and package version bumps (each report in [`reports/`](./reports) is one `compare` run)
+> - 📊 **`packages` / `modules`** list the heaviest dependencies and files, with optimization hints
+> - 🖥️ **Interactive UI and static HTML reports** let you drill into any module
+> - ⚛️ Works with **Re.Pack** and inside **React Native DevTools** through a Rozenite plugin
+>
+> Try it on your own app and see what's really in your bundle.
+
+---
+
 
 JS bundle diff (platforms: `ios`, `android`, debug: `false`):
 
