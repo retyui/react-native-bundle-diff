@@ -3,6 +3,11 @@ name: Build bundles
 on:
   workflow_dispatch:
     inputs:
+      bundler:
+        description: Bundler to build with
+        type: choice
+        options: [all, metro, repack]
+        default: all
       concurrency:
         description: Number of bundles (ios/android) to build in parallel per version
         default: '2'
@@ -15,19 +20,32 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      # One { bundler, id, version } entry per project; repack is limited to RN >= 0.77 by get-versions.mjs
       - id: read
-        run: echo "matrix=$(jq -c .versions scripts/rn-versions.json)" >> "$GITHUB_OUTPUT"
+        env:
+          BUNDLER: ${{ inputs.bundler || 'all' }}
+        run: |
+          matrix=$(node --input-type=module -e "
+            import { BUNDLERS, getVersions } from './scripts/get-versions.mjs';
+            const bundlers = process.env.BUNDLER === 'all' ? BUNDLERS : [process.env.BUNDLER];
+            console.log(JSON.stringify(bundlers.flatMap((bundler) => getVersions({ bundler }).map((v) => ({ bundler, ...v })))));
+          ")
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
 
   build:
     needs: versions
-    name: build (${{ matrix.rn.id }})
+    name: build (${{ matrix.bundler }} ${{ matrix.id }})
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     strategy:
       fail-fast: false
       max-parallel: 20
       matrix:
-        rn: ${{ fromJSON(needs.versions.outputs.matrix) }}
+        include: ${{ fromJSON(needs.versions.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v7
 
@@ -43,21 +61,21 @@ jobs:
         uses: actions/cache@v6
         with:
           path: ${{ steps.yarn-cache-dir.outputs.dir }}
-          key: yarn-${{ matrix.rn.id }}-${{ matrix.rn.version }}
-          restore-keys: yarn-${{ matrix.rn.id }}-
+          key: yarn-${{ matrix.bundler }}-${{ matrix.id }}-${{ matrix.version }}
+          restore-keys: yarn-${{ matrix.bundler }}-${{ matrix.id }}-
 
       - name: Create project
-        run: node scripts/create-projects.mjs --name "${{ matrix.rn.id }}" --version "${{ matrix.rn.version }}"
+        run: node scripts/create-projects.mjs --bundler "${{ matrix.bundler }}" --name "${{ matrix.id }}" --version "${{ matrix.version }}"
 
       - name: Build bundles
-        run: node scripts/build-bundles.mjs --name "${{ matrix.rn.id }}" --version "${{ matrix.rn.version }}" --concurrency "${{ inputs.concurrency || '2' }}"
+        run: node scripts/build-bundles.mjs --bundler "${{ matrix.bundler }}" --name "${{ matrix.id }}" --version "${{ matrix.version }}" --concurrency "${{ inputs.concurrency || '2' }}"
 
-      - name: Upload metro stats
+      - name: Upload stats
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: metro-stats-${{ matrix.rn.id }}
-          path: tmp/*/*-metro-stats.json
+          name: ${{ matrix.bundler }}-stats-${{ matrix.id }}
+          path: tmp/${{ matrix.bundler }}/*/*-metro-stats.json
           if-no-files-found: warn
 
   collect:
@@ -66,8 +84,17 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Merge metro stats
+        if: inputs.bundler != 'repack'
         uses: actions/upload-artifact/merge@v7
         with:
           name: metro-stats
           pattern: metro-stats-*
+          delete-merged: true
+
+      - name: Merge repack stats
+        if: inputs.bundler != 'metro'
+        uses: actions/upload-artifact/merge@v7
+        with:
+          name: repack-stats
+          pattern: repack-stats-*
           delete-merged: true
