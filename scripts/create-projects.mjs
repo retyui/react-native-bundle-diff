@@ -94,7 +94,8 @@ const setupMetro = (projectDir) => {
 const setupRepack = (projectDir, version) => {
   run('npx --yes @callstack/repack-init@latest --bundler rspack', projectDir);
   // repack-init only adds devDependencies to package.json
-  run('yarn install', projectDir);
+  // CI enables immutable installs by default, but the lockfile has to change here
+  run('YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install', projectDir);
 
   const configPath = ['rspack.config.mjs', 'webpack.config.mjs']
     .map((file) => join(projectDir, file))
