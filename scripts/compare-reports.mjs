@@ -1,19 +1,20 @@
-// Compares tmp/<id>/<platform>-metro-stats.json of every two consecutive versions from
-// rn-versions.json and writes <before>-<after>-<platform>.md reports to reports/.
+// Compares tmp/<bundler>/<id>/<platform>-metro-stats.json of every two consecutive versions from
+// rn-versions.json and writes <before>-<after>-<platform>.md reports to reports/<bundler>/.
 //
-// Usage: node scripts/compare-reports.mjs [--before RN70 --after RN71]
+// Usage: node scripts/compare-reports.mjs [--bundler metro|repack] [--before RN70 --after RN71]
 
 import { spawn } from 'node:child_process';
 import { createWriteStream, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
-import rnVersions from './rn-versions.json' with { type: 'json' };
+import { getVersions } from './get-versions.mjs';
 
 const PLATFORMS = ['ios', 'android'];
 
 const { values: args } = parseArgs({
   options: {
+    bundler: { type: 'string', default: 'metro' },
     before: { type: 'string' },
     after: { type: 'string' },
   },
@@ -24,11 +25,11 @@ if (!args.before !== !args.after) {
 }
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const projectsDir = join(root, 'tmp');
-const reportsDir = join(root, 'reports');
+const projectsDir = join(root, 'tmp', args.bundler);
+const reportsDir = join(root, 'reports', args.bundler);
 mkdirSync(reportsDir, { recursive: true });
 
-const ids = rnVersions.versions.map(({ id }) => id);
+const ids = getVersions({ bundler: args.bundler }).map(({ id }) => id);
 const pairs = args.before
   ? [[args.before, args.after]]
   : ids.slice(1).map((after, i) => [ids[i], after]);

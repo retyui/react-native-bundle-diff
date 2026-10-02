@@ -1,10 +1,11 @@
-// Builds a release JS bundle for ios and android in every project from rn-versions.json.
-// PLATFORM_TYPE makes react-native-bundle-discovery write <platform>-metro-stats.json.
+// Builds a release JS bundle for ios and android in every tmp/<bundler>/ project from rn-versions.json.
+// PLATFORM_TYPE makes react-native-bundle-discovery write <platform>-metro-stats.json
+// (with Re.Pack, `react-native bundle` is handled by Re.Pack's commands).
 //
-// Usage: node scripts/build-bundles.mjs [--concurrency N] [--name RN70 --version 0.70.15]
+// Usage: node scripts/build-bundles.mjs [--bundler metro|repack] [--concurrency N] [--name RN70 --version 0.70.15]
 
 import { spawn } from 'node:child_process';
-import { existsSync, mkdirSync } from 'node:fs';
+import { existsSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
@@ -14,6 +15,7 @@ const PLATFORMS = ['ios', 'android'];
 
 const { values: args } = parseArgs({
   options: {
+    bundler: { type: 'string', default: 'metro' },
     concurrency: { type: 'string', short: 'j', default: '1' },
     name: { type: 'string' },
     version: { type: 'string' },
@@ -23,7 +25,7 @@ const versions = getVersions(args);
 const concurrency = Math.max(1, Number.parseInt(args.concurrency, 10) || 1);
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const projectsDir = join(root, 'tmp');
+const projectsDir = join(root, 'tmp', args.bundler);
 
 // Prefixes every output line with the job label so parallel logs stay readable
 const pipeWithPrefix = (stream, out, prefix) => {
@@ -74,6 +76,8 @@ const buildBundle = async ({ id, version, platform, projectDir }) => {
   // parallel --reset-cache runs from wiping each other's cache
   const tmpDir = join(projectDir, `.metro-tmp-${platform}`);
   mkdirSync(tmpDir, { recursive: true });
+  const statsPath = join(projectDir, `${platform}-metro-stats.json`);
+  rmSync(statsPath, { force: true });
 
   try {
     await run(
@@ -82,6 +86,10 @@ const buildBundle = async ({ id, version, platform, projectDir }) => {
       { PLATFORM_TYPE: platform, TMPDIR: tmpDir },
       label,
     );
+    // Re.Pack exits with code 0 even when the compilation fails
+    if (!existsSync(statsPath)) {
+      throw new Error(`${platform}-metro-stats.json was not created`);
+    }
     console.log(`✅ ${label} (${version})`);
   } catch (error) {
     console.error(`❌ ${platform} bundle failed for ${id} (${version}): ${error.message}`);
