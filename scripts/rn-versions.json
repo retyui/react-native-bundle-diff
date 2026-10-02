@@ -1,0 +1,25 @@
+{
+  "versions": [
+    { "id": "RN68", "version": "0.68.7" },
+    { "id": "RN69", "version": "0.69.12" },
+    { "id": "RN70", "version": "0.70.15" },
+    { "id": "RN71", "version": "0.71.19" },
+    { "id": "RN72", "version": "0.72.17" },
+    { "id": "RN73", "version": "0.73.11" },
+    { "id": "RN74", "version": "0.74.7" },
+    { "id": "RN75", "version": "0.75.5" },
+    { "id": "RN76", "version": "0.76.9" },
+    { "id": "RN77", "version": "0.77.3" },
+    { "id": "RN78", "version": "0.78.3" },
+    { "id": "RN79", "version": "0.79.7" },
+    { "id": "RN80", "version": "0.80.3" },
+    { "id": "RN81", "version": "0.81.6" },
+    { "id": "RN82", "version": "0.82.1" },
+    { "id": "RN83", "version": "0.83.10" },
+    { "id": "RN84", "version": "0.84.1" },
+    { "id": "RN85", "version": "0.85.3" },
+    { "id": "RN86", "version": "0.86.3" },
+    { "id": "RN87", "version": "0.87.1" },
+    { "id": "RN88", "version": "0.88.0-rc.3" }
+  ]
+}
