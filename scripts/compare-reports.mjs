@@ -1,10 +1,10 @@
 // Compares tmp/<id>/<platform>-metro-stats.json of every two consecutive versions from
-// rn-versions.json and writes <before>-<after>-<platform>.md reports to the repo root.
+// rn-versions.json and writes <before>-<after>-<platform>.md reports to reports/.
 //
 // Usage: node scripts/compare-reports.mjs [--before RN70 --after RN71]
 
 import { spawn } from 'node:child_process';
-import { createWriteStream, existsSync } from 'node:fs';
+import { createWriteStream, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
@@ -25,6 +25,8 @@ if (!args.before !== !args.after) {
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const projectsDir = join(root, 'tmp');
+const reportsDir = join(root, 'reports');
+mkdirSync(reportsDir, { recursive: true });
 
 const ids = rnVersions.versions.map(({ id }) => id);
 const pairs = args.before
@@ -58,7 +60,7 @@ for (const [beforeId, afterId] of pairs) {
     }
 
     try {
-      await compare(before, after, join(root, `${label}.md`));
+      await compare(before, after, join(reportsDir, `${label}.md`));
       console.log(`✅ ${label}`);
     } catch (error) {
       console.error(`❌ ${label}: ${error.message}`);
