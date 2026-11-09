@@ -20,6 +20,7 @@
     { "id": "RN85", "version": "0.85.3" },
     { "id": "RN86", "version": "0.86.3" },
     { "id": "RN87", "version": "0.87.1" },
-    { "id": "RN88", "version": "0.88.0-rc.3" }
+    { "id": "RN88", "version": "0.88.1" },
+    { "id": "RN89", "version": "0.89.0-rc.0" }
   ]
 }
