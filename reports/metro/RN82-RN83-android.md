@@ -3,7 +3,7 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 977.4 KB | 1007.72 KB | 📈 +30.32 KB (+3.1%) |
+| **Total size** | 962.44 KB | 992.06 KB | 📈 +29.63 KB (+3.08%) |
 | **Modules** | 517 | 529 | +12 |
 | **Packages** | 21 | 21 | 0 |
 
@@ -14,37 +14,35 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.82.1 | 0.83.10 | +30.15 KB |
+| `react-native` | 0.82.1 | 0.83.10 | +29.46 KB |
 | `@react-native/new-app-screen` | 0.82.1 | 0.83.10 | +123 Bytes |
 | `@react-native/virtualized-lists` | 0.82.1 | 0.83.10 | +48 Bytes |
 | `react` | 19.1.1 | 19.2.0 | +1 Bytes |
-| `@react-native/js-polyfills` | 0.82.1 | 0.83.10 | 0 Bytes |
 | `@react-native/assets-registry` | 0.82.1 | 0.83.10 | 0 Bytes |
+| `@react-native/js-polyfills` | 0.82.1 | 0.83.10 | 0 Bytes |
 | `@react-native/normalize-colors` | 0.82.1 | 0.83.10 | 0 Bytes |
 | `scheduler` | 0.26.0 | 0.27.0 | 0 Bytes |
 
 </details>
 
-⚠️ Deprecated packages: 0 → 0
-
 ### 📄 Modules
 
 <details>
-<summary>🆕 Added modules (13, +21.43 KB)</summary>
+<summary>🆕 Added modules (13, +20.83 KB)</summary>
 
 | Module | Size |
 | --- | ---: |
-| `node_modules/react-native/src/private/webapis/intersectionobserver/IntersectionObserver.js` | 4.88 KB |
-| `node_modules/react-native/src/private/webapis/intersectionobserver/internals/IntersectionObserverManager.js` | 3.01 KB |
-| `node_modules/react-native/src/private/webapis/mutationobserver/MutationObserver.js` | 2.62 KB |
+| `node_modules/react-native/src/private/webapis/intersectionobserver/IntersectionObserver.js` | 4.79 KB |
+| `node_modules/react-native/src/private/webapis/intersectionobserver/internals/IntersectionObserverManager.js` | 2.92 KB |
+| `node_modules/react-native/src/private/webapis/mutationobserver/MutationObserver.js` | 2.53 KB |
 | `node_modules/react-native/Libraries/StyleSheet/processBackgroundPosition.js` | 2.53 KB |
-| `node_modules/react-native/src/private/webapis/mutationobserver/internals/MutationObserverManager.js` | 2.12 KB |
+| `node_modules/react-native/src/private/webapis/mutationobserver/internals/MutationObserverManager.js` | 2.04 KB |
 | `node_modules/react-native/src/private/webapis/intersectionobserver/IntersectionObserverEntry.js` | 1.37 KB |
-| `node_modules/react-native/src/private/webapis/mutationobserver/MutationRecord.js` | 1.34 KB |
+| `node_modules/react-native/src/private/webapis/mutationobserver/MutationRecord.js` | 1.25 KB |
 | `node_modules/react-native/Libraries/StyleSheet/processBackgroundRepeat.js` | 1.02 KB |
 | `node_modules/react-native/Libraries/StyleSheet/processBackgroundSize.js` | 858 Bytes |
-| `node_modules/react-native/src/private/webapis/intersectionobserver/specs/NativeIntersectionObserver.js` | 630 Bytes |
-| `node_modules/react-native/src/private/webapis/mutationobserver/specs/NativeMutationObserver.js` | 626 Bytes |
+| `node_modules/react-native/src/private/webapis/intersectionobserver/specs/NativeIntersectionObserver.js` | 542 Bytes |
+| `node_modules/react-native/src/private/webapis/mutationobserver/specs/NativeMutationObserver.js` | 538 Bytes |
 | `node_modules/react-native/src/private/setup/setUpMutationObserver.js` | 289 Bytes |
 | `node_modules/react-native/src/private/setup/setUpIntersectionObserver.js` | 213 Bytes |
 
@@ -60,7 +58,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (30, net +10.48 KB)</summary>
+<summary>🔀 Changed modules (30, net +10.39 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -69,27 +67,27 @@
 | `node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-prod.js` | 116.09 KB | 117.4 KB | 📈 +1.31 KB |
 | `node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.js` | 4.28 KB | 5.29 KB | 📈 +1 KB |
 | `node_modules/react-native/src/private/webapis/performance/ResourceTiming.js` | 2.66 KB | 3.33 KB | 📈 +691 Bytes |
-| `node_modules/react-native/Libraries/Pressability/usePressability.js` | 420 Bytes | 956 Bytes | 📈 +536 Bytes |
 | `node_modules/react-native/Libraries/Network/XMLHttpRequest.js` | 12.55 KB | 12.04 KB | 📉 -518 Bytes |
-| `node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/ReactFabricPublicInstance.js` | 1.47 KB | 1.21 KB | 📉 -263 Bytes |
-| `node_modules/react-native/Libraries/NativeComponent/BaseViewConfig.android.js` | 6.88 KB | 7.08 KB | 📈 +202 Bytes |
-| `node_modules/react-native/Libraries/Components/View/ReactNativeStyleAttributes.js` | 3.27 KB | 3.46 KB | 📈 +195 Bytes |
-| `node_modules/react-native/src/private/webapis/dom/nodes/ReactNativeElement.js` | 2.95 KB | 3.14 KB | 📈 +189 Bytes |
+| `node_modules/react-native/Libraries/Pressability/usePressability.js` | 420 Bytes | 868 Bytes | 📈 +448 Bytes |
+| `node_modules/react-native/Libraries/ReactNative/ReactFabricPublicInstance/ReactFabricPublicInstance.js` | 1.38 KB | 1.12 KB | 📉 -265 Bytes |
+| `node_modules/react-native/Libraries/NativeComponent/BaseViewConfig.android.js` | 6.79 KB | 6.99 KB | 📈 +202 Bytes |
+| `node_modules/react-native/Libraries/Components/View/ReactNativeStyleAttributes.js` | 3.18 KB | 3.37 KB | 📈 +195 Bytes |
+| `node_modules/react-native/src/private/webapis/dom/nodes/ReactNativeElement.js` | 2.87 KB | 3.05 KB | 📈 +187 Bytes |
 | `node_modules/react-native/src/private/webapis/performance/internals/RawPerformanceEntry.js` | 1.88 KB | 2.04 KB | 📈 +159 Bytes |
 | `node_modules/react-native/Libraries/ReactNative/getNativeComponentAttributes.js` | 1.9 KB | 2.03 KB | 📈 +141 Bytes |
-| `node_modules/react-native/Libraries/Animated/nodes/AnimatedColor.js` | 4.5 KB | 4.63 KB | 📈 +133 Bytes |
+| `node_modules/react-native/Libraries/Animated/nodes/AnimatedColor.js` | 4.41 KB | 4.54 KB | 📈 +133 Bytes |
 | `node_modules/react-native/src/private/setup/setUpDefaultReactNativeEnvironment.js` | 244 Bytes | 374 Bytes | 📈 +130 Bytes |
-| `node_modules/@react-native/new-app-screen/src/NewAppScreen.js` | 3.19 KB | 3.31 KB | 📈 +123 Bytes |
+| `node_modules/@react-native/new-app-screen/src/NewAppScreen.js` | 3.11 KB | 3.23 KB | 📈 +123 Bytes |
 | `node_modules/react-native/index.js` | 5.28 KB | 5.38 KB | 📈 +105 Bytes |
 | `node_modules/react-native/Libraries/TurboModule/TurboModuleRegistry.js` | 572 Bytes | 477 Bytes | 📉 -95 Bytes |
 | `node_modules/react-native/Libraries/Network/RCTNetworking.android.js` | 739 Bytes | 831 Bytes | 📈 +92 Bytes |
 | `node_modules/react-native/Libraries/Utilities/Appearance.js` | 859 Bytes | 917 Bytes | 📈 +58 Bytes |
-| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 2.12 KB | 2.17 KB | 📈 +53 Bytes |
+| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 2.03 KB | 2.09 KB | 📈 +53 Bytes |
 | `node_modules/react-native/Libraries/Core/setUpPerformance.js` | 223 Bytes | 274 Bytes | 📈 +51 Bytes |
-| `node_modules/@react-native/virtualized-lists/Lists/VirtualizedSectionList.js` | 6.99 KB | 7.03 KB | 📈 +48 Bytes |
-| `node_modules/react-native/Libraries/Components/TextInput/TextInput.js` | 10.22 KB | 10.25 KB | 📈 +29 Bytes |
+| `node_modules/@react-native/virtualized-lists/Lists/VirtualizedSectionList.js` | 6.9 KB | 6.95 KB | 📈 +48 Bytes |
+| `node_modules/react-native/Libraries/Components/TextInput/TextInput.js` | 10.13 KB | 10.16 KB | 📈 +29 Bytes |
 | `node_modules/react-native/src/private/components/virtualview/VirtualViewExperimentalNativeComponent.js` | 484 Bytes | 509 Bytes | 📈 +25 Bytes |
-| `node_modules/react-native/Libraries/Components/View/ViewNativeComponent.js` | 781 Bytes | 796 Bytes | 📈 +15 Bytes |
+| `node_modules/react-native/Libraries/Components/View/ViewNativeComponent.js` | 693 Bytes | 708 Bytes | 📈 +15 Bytes |
 | `node_modules/react-native/Libraries/EventEmitter/RCTDeviceEventEmitter.js` | 1.07 KB | 1.08 KB | 📈 +12 Bytes |
 | `node_modules/react-native/Libraries/NativeComponent/NativeComponentRegistryUnstable.js` | 342 Bytes | 354 Bytes | 📈 +12 Bytes |
 | `node_modules/react/cjs/react.production.js` | 7.5 KB | 7.5 KB | 📈 +1 Bytes |
