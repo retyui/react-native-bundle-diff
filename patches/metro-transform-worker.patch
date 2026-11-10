@@ -1,0 +1,26 @@
+--- a/src/index.js
++++ b/src/index.js
+@@ -272,10 +272,7 @@
+       ));
+     }
+   }
+-  const minify =
+-    options.minify &&
+-    options.unstable_transformProfile !== "hermes-canary" &&
+-    options.unstable_transformProfile !== "hermes-stable";
++  const minify = options.minify;
+   const reserved = [];
+   if (config.unstable_dependencyMapReservedName != null) {
+     reserved.push(config.unstable_dependencyMapReservedName);
+@@ -405,10 +402,7 @@
+         );
+   let map;
+   let lineCount;
+-  const minify =
+-    options.minify &&
+-    options.unstable_transformProfile !== "hermes-canary" &&
+-    options.unstable_transformProfile !== "hermes-stable";
++  const minify = options.minify;
+   if (minify) {
+     ({ map, code, lineCount } = await minifyCode(config, file.filename, code, {
+       version: 3,

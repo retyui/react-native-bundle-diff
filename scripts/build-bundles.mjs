@@ -4,8 +4,8 @@
 //
 // Usage: node scripts/build-bundles.mjs [--bundler metro|repack] [--concurrency N] [--name RN70 --version 0.70.15]
 
-import { spawn } from 'node:child_process';
-import { existsSync, mkdirSync, rmSync } from 'node:fs';
+import { execSync, spawn } from 'node:child_process';
+import { existsSync, mkdirSync, readFileSync, rmSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
@@ -54,6 +54,21 @@ const run = (cmd, cwd, env, label) =>
     );
   });
 
+// Since RN 0.89 `react-native bundle` defaults to the hermes-stable transform profile, for which
+// metro-transform-worker skips minification. The patch keeps minification on for every profile.
+const FORCE_MINIFY_MIN_MINOR = 89;
+const FORCE_MINIFY_PATCH = join(root, 'patches', 'metro-transform-worker.patch');
+
+const patchMetroTransformWorker = (projectDir) => {
+  const workerDir = join(projectDir, 'node_modules', 'metro-transform-worker');
+  const source = readFileSync(join(workerDir, 'src', 'index.js'), 'utf8');
+  if (!source.includes('options.unstable_transformProfile !== "hermes-stable"')) {
+    console.log(`metro-transform-worker in ${projectDir} is already patched`);
+    return;
+  }
+  execSync(`patch -p1 --forward -i "${FORCE_MINIFY_PATCH}"`, { cwd: workerDir, stdio: 'inherit' });
+};
+
 const jobs = [];
 for (const { id, version } of versions) {
   const projectDir = join(projectsDir, id);
@@ -61,6 +76,10 @@ for (const { id, version } of versions) {
   if (!existsSync(projectDir)) {
     console.warn(`⚠️  ${projectDir} not found, skipping`);
     continue;
+  }
+
+  if (args.bundler === 'metro' && Number(version.split('.')[1]) >= FORCE_MINIFY_MIN_MINOR) {
+    patchMetroTransformWorker(projectDir);
   }
 
   for (const platform of PLATFORMS) {
