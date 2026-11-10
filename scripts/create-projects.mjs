@@ -106,7 +106,8 @@ const setupRepack = (projectDir, version) => {
   }
 
   const config = readFileSync(configPath, 'utf8');
-  if (config.includes(REPACK_IMPORT) && config.includes(REPACK_RESOLVE) && config.includes(REPACK_PLUGINS)) {
+  // Newer repack-init already generates getResolveOptions({ enablePackageExports: true })
+  if (config.includes(REPACK_IMPORT) && config.includes(REPACK_PLUGINS)) {
     const packageExports = Number(version.split('.')[1]) >= 79;
     writeFileSync(
       configPath,
