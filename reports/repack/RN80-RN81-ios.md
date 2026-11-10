@@ -3,18 +3,19 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 895.6 KB | 905.46 KB | 📈 +9.86 KB (+1.1%) |
-| **Modules** | 535 | 541 | +6 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 895.6 KB | 907.48 KB | 📈 +11.89 KB (+1.33%) |
+| **Modules** | 535 | 542 | +7 |
+| **Packages** | 24 | 25 | +1 |
 
 ### 📦 Packages
 
 <details>
-<summary>➕ Added packages (1)</summary>
+<summary>➕ Added packages (2)</summary>
 
 | Package | Version | Size |
 | --- | --- | ---: |
-| `react-native-safe-area-context` | 5.10.1 | 5.02 KB |
+| `react-native-safe-area-context` | 5.11.1 | 5.87 KB |
+| `flow-enums-runtime` | 0.0.6 | 1.11 KB |
 
 </details>
 
@@ -32,7 +33,7 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.80.3 | 0.81.6 | +4.81 KB |
+| `react-native` | 0.80.3 | 0.81.6 | +4.87 KB |
 | `@react-native/virtualized-lists` | 0.80.3 | 0.81.6 | +138 Bytes |
 | `@react-native/new-app-screen` | 0.80.3 | 0.81.6 | +59 Bytes |
 | `@react-native/js-polyfills` | 0.80.3 | 0.81.6 | +34 Bytes |
@@ -45,20 +46,21 @@
 ### 📄 Modules
 
 <details>
-<summary>🆕 Added modules (16, +11.64 KB)</summary>
+<summary>🆕 Added modules (17, +13.66 KB)</summary>
 
 | Module | Size |
 | --- | ---: |
-| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 2.32 KB |
+| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 3.15 KB |
 | `node_modules/react-native/src/private/webapis/performance/ResourceTiming.js` | 1.89 KB |
 | `node_modules/react-native/src/private/webapis/errors/DOMException.js` | 1.84 KB |
-| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.39 KB |
+| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.45 KB |
+| `node_modules/flow-enums-runtime/index.js` | 1.11 KB |
 | `node_modules/react-native-safe-area-context/src/SafeAreaView.tsx` | 787 Bytes |
 | `node_modules/react-native/src/private/components/virtualview/VirtualViewNativeComponent.js` | 553 Bytes |
 | `node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaProvider.ts` | 533 Bytes |
 | `node_modules/react-native/src/private/webapis/webidl/PlatformObjects.js` | 526 Bytes |
 | `node_modules/react-native-safe-area-context/src/InitialWindow.native.ts` | 456 Bytes |
-| `node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaView.ts` | 387 Bytes |
+| `node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaView.ts` | 407 Bytes |
 | `node_modules/react-native/src/private/setup/setUpDefaultReactNativeEnvironment.js` | 251 Bytes |
 | `node_modules/react-native/Libraries/Text/TextAncestorContext.js` | 203 Bytes |
 | `node_modules/react-native-safe-area-context/src/specs/NativeSafeAreaContext.ts` | 202 Bytes |
@@ -126,12 +128,12 @@
 | `node_modules/react-native/Libraries/Modal/Modal.js` | 2.95 KB | 3 KB | 📈 +51 Bytes |
 | `node_modules/react-native/Libraries/UTFSequence.js` | 422 Bytes | 373 Bytes | 📉 -49 Bytes |
 | `node_modules/react-native/Libraries/Core/Devtools/parseErrorStack.js` | 676 Bytes | 627 Bytes | 📉 -49 Bytes |
+| `__runtime__` | 4.59 KB | 4.64 KB | 📈 +44 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/events/EventTarget.js` | 3.94 KB | 3.99 KB | 📈 +42 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/events/Event.js` | 2.62 KB | 2.66 KB | 📈 +38 Bytes |
 | `node_modules/react-native/src/private/webapis/performance/MemoryInfo.js` | 804 Bytes | 842 Bytes | 📈 +38 Bytes |
 | `node_modules/react-native/src/private/webapis/performance/ReactNativeStartupTiming.js` | 1.43 KB | 1.47 KB | 📈 +38 Bytes |
 | `node_modules/react-native/src/private/webapis/performance/PerformanceEntry.js` | 1 KB | 1.04 KB | 📈 +38 Bytes |
-| `__runtime__` | 4.59 KB | 4.63 KB | 📈 +37 Bytes |
 | `node_modules/react-native/src/private/webapis/geometry/DOMRectList.js` | 834 Bytes | 871 Bytes | 📈 +37 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/oldstylecollections/HTMLCollection.js` | 886 Bytes | 923 Bytes | 📈 +37 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/oldstylecollections/NodeList.js` | 1.11 KB | 1.14 KB | 📈 +37 Bytes |

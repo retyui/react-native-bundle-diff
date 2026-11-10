@@ -3,9 +3,9 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 919.53 KB | 946.61 KB | 📈 +27.08 KB (+2.94%) |
-| **Modules** | 545 | 557 | +12 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 921.56 KB | 948.63 KB | 📈 +27.08 KB (+2.94%) |
+| **Modules** | 546 | 558 | +12 |
+| **Packages** | 25 | 25 | 0 |
 
 ### 📦 Packages
 
@@ -82,7 +82,7 @@
 | `node_modules/react-native/Libraries/Network/RCTNetworking.android.js` | 743 Bytes | 837 Bytes | 📈 +94 Bytes |
 | `__runtime__` | 4.66 KB | 4.74 KB | 📈 +83 Bytes |
 | `node_modules/react-native/Libraries/Pressability/usePressability.js` | 471 Bytes | 547 Bytes | 📈 +76 Bytes |
-| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.76 KB | 1.82 KB | 📈 +65 Bytes |
+| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.82 KB | 1.88 KB | 📈 +65 Bytes |
 | `node_modules/react-native/Libraries/Utilities/Appearance.js` | 1017 Bytes | 1.04 KB | 📈 +52 Bytes |
 | `node_modules/react-native/Libraries/Core/setUpPerformance.js` | 271 Bytes | 322 Bytes | 📈 +51 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyText.js` | 410 Bytes | 459 Bytes | 📈 +49 Bytes |

@@ -3,9 +3,9 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 919.89 KB | 919.85 KB | 📉 -38 Bytes (0%) |
-| **Modules** | 550 | 558 | +8 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 921.73 KB | 921.69 KB | 📉 -38 Bytes (0%) |
+| **Modules** | 551 | 559 | +8 |
+| **Packages** | 25 | 25 | 0 |
 
 ### 📦 Packages
 
@@ -63,12 +63,12 @@
 | `node_modules/react-native/Libraries/NativeComponent/BaseViewConfig.android.js` | 6.82 KB | 6.57 KB | 📉 -259 Bytes |
 | `node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags.js` | 12.42 KB | 12.19 KB | 📉 -233 Bytes |
 | `node_modules/react-native/Libraries/Text/TextNativeComponent.js` | 1.03 KB | 1.25 KB | 📈 +221 Bytes |
-| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.91 KB | 1.77 KB | 📉 -147 Bytes |
+| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.93 KB | 1.79 KB | 📉 -147 Bytes |
 | `node_modules/react-native/index.js` | 5.37 KB | 5.51 KB | 📈 +142 Bytes |
 | `node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js` | 2.32 KB | 2.21 KB | 📉 -106 Bytes |
 | `node_modules/react-native/src/private/setup/setUpDefaultReactNativeEnvironment.js` | 319 Bytes | 382 Bytes | 📈 +63 Bytes |
 | `node_modules/react-native/Libraries/Pressability/usePressability.js` | 528 Bytes | 470 Bytes | 📉 -58 Bytes |
-| `__runtime__` | 4.69 KB | 4.74 KB | 📈 +56 Bytes |
+| `__runtime__` | 4.69 KB | 4.75 KB | 📈 +56 Bytes |
 | `node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js` | 14.68 KB | 14.72 KB | 📈 +46 Bytes |
 | `node_modules/react-native/Libraries/Utilities/Appearance.js` | 1009 Bytes | 1.02 KB | 📈 +40 Bytes |
 | `node_modules/react-native/Libraries/Components/TextInput/RCTTextInputViewConfig.js` | 2.61 KB | 2.57 KB | 📉 -40 Bytes |

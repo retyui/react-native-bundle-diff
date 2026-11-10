@@ -3,9 +3,9 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 909.72 KB | 919.53 KB | 📈 +9.81 KB (+1.08%) |
-| **Modules** | 544 | 545 | +1 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 911.75 KB | 921.56 KB | 📈 +9.81 KB (+1.08%) |
+| **Modules** | 545 | 546 | +1 |
+| **Packages** | 25 | 25 | 0 |
 
 ### 📦 Packages
 
@@ -65,7 +65,7 @@
 | `node_modules/react-native/Libraries/Core/ReactNativeVersion.js` | 188 Bytes | 604 Bytes | 📈 +416 Bytes |
 | `node_modules/react-native/Libraries/Animated/nodes/AnimatedProps.js` | 4.38 KB | 3.98 KB | 📉 -411 Bytes |
 | `node_modules/react-native/Libraries/Interaction/InteractionManager.js` | 1.32 KB | 951 Bytes | 📉 -402 Bytes |
-| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.39 KB | 1.76 KB | 📈 +376 Bytes |
+| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.45 KB | 1.82 KB | 📈 +376 Bytes |
 | `node_modules/react-native/src/private/animated/createAnimatedPropsMemoHook.js` | 2.77 KB | 2.41 KB | 📉 -370 Bytes |
 | `node_modules/react-native/src/private/webapis/performance/LongTasks.js` | 847 Bytes | 1.18 KB | 📈 +360 Bytes |
 | `node_modules/react-native/Libraries/Animated/nodes/AnimatedStyle.js` | 3 KB | 2.66 KB | 📉 -353 Bytes |
@@ -103,7 +103,7 @@
 | `node_modules/react-native/src/private/webapis/dom/nodes/internals/NodeInternals.js` | 1.61 KB | 1.62 KB | 📈 +11 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyNode.js` | 3.33 KB | 3.33 KB | 📈 +10 Bytes |
 | `node_modules/react-native/Libraries/Animated/NativeAnimatedAllowlist.js` | 1.66 KB | 1.67 KB | 📈 +10 Bytes |
-| `__runtime__` | 4.65 KB | 4.66 KB | 📈 +7 Bytes |
+| `__runtime__` | 4.66 KB | 4.66 KB | 📈 +7 Bytes |
 
 _...and 2 more (use `--limit` to show more)._
 

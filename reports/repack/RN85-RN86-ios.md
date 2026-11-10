@@ -3,9 +3,9 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 915.05 KB | 807.46 KB | 📉 -107.59 KB (-11.76%) |
-| **Modules** | 556 | 568 | +12 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 916.9 KB | 809.3 KB | 📉 -107.59 KB (-11.73%) |
+| **Modules** | 557 | 569 | +12 |
+| **Packages** | 25 | 25 | 0 |
 
 ### 📦 Packages
 
@@ -87,7 +87,7 @@
 | `node_modules/react-native/Libraries/ReactNative/AppRegistryImpl.js` | 3.25 KB | 3.34 KB | 📈 +97 Bytes |
 | `node_modules/react-native/Libraries/Components/View/ReactNativeStyleAttributes.js` | 3.5 KB | 3.59 KB | 📈 +92 Bytes |
 | `node_modules/react-native/Libraries/Modal/Modal.js` | 2.92 KB | 3.01 KB | 📈 +91 Bytes |
-| `__runtime__` | 4.73 KB | 4.81 KB | 📈 +83 Bytes |
+| `__runtime__` | 4.74 KB | 4.82 KB | 📈 +83 Bytes |
 | `node_modules/react-native/Libraries/Components/Pressable/useAndroidRippleForView.js` | 1.02 KB | 960 Bytes | 📉 -83 Bytes |
 | `node_modules/react-native/Libraries/Core/ExceptionsManager.js` | 2.22 KB | 2.15 KB | 📉 -76 Bytes |
 | `node_modules/react-native/Libraries/Components/View/View.js` | 1.69 KB | 1.76 KB | 📈 +73 Bytes |

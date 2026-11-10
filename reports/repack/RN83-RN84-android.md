@@ -3,9 +3,9 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | android | android |  |
-| **Total size** | 946.61 KB | 919.89 KB | 📉 -26.72 KB (-2.82%) |
-| **Modules** | 557 | 550 | -7 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 948.63 KB | 921.73 KB | 📉 -26.9 KB (-2.84%) |
+| **Modules** | 558 | 551 | -7 |
+| **Packages** | 25 | 25 | 0 |
 
 ### 📦 Packages
 
@@ -14,7 +14,7 @@
 
 | Package | Before | After | Δ |
 | --- | --- | --- | ---: |
-| `react-native` | 0.83.10 | 0.84.1 | -20.74 KB |
+| `react-native` | 0.83.10 | 0.84.1 | -20.78 KB |
 | `@react-native/virtualized-lists` | 0.83.10 | 0.84.1 | -1.46 KB |
 | `@react-native/js-polyfills` | 0.83.10 | 0.84.1 | -307 Bytes |
 | `@react-native/normalize-colors` | 0.83.10 | 0.84.1 | -272 Bytes |
@@ -54,7 +54,7 @@
 </details>
 
 <details>
-<summary>🔀 Changed modules (268, net -21.24 KB)</summary>
+<summary>🔀 Changed modules (268, net -21.42 KB)</summary>
 
 | Module | Before | After | Δ |
 | --- | ---: | ---: | ---: |
@@ -79,6 +79,7 @@
 | `node_modules/react-native/src/private/animated/createAnimatedPropsHook.js` | 2.61 KB | 2.29 KB | 📉 -320 Bytes |
 | `node_modules/react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod.js` | 120.94 KB | 121.24 KB | 📈 +303 Bytes |
 | `node_modules/react-native/Libraries/Lists/FlatList.js` | 5.91 KB | 5.61 KB | 📉 -302 Bytes |
+| `node_modules/react-native-safe-area-context/src/SafeAreaContext.tsx` | 3.15 KB | 2.86 KB | 📉 -296 Bytes |
 | `node_modules/react-native/Libraries/Utilities/createPerformanceLogger.js` | 2.64 KB | 2.36 KB | 📉 -291 Bytes |
 | `node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js` | 5.46 KB | 5.18 KB | 📉 -287 Bytes |
 | `node_modules/react-native/Libraries/Components/Touchable/TouchableWithoutFeedback.js` | 2.44 KB | 2.17 KB | 📉 -279 Bytes |
@@ -107,7 +108,6 @@
 | `node_modules/react-native/src/private/setup/setUpDOM.js` | 908 Bytes | 743 Bytes | 📉 -165 Bytes |
 | `node_modules/react-native/src/private/setup/setUpPerformanceModern.js` | 1.28 KB | 1.12 KB | 📉 -165 Bytes |
 | `node_modules/@react-native/virtualized-lists/Lists/VirtualizedSectionList.js` | 6.07 KB | 5.91 KB | 📉 -165 Bytes |
-| `node_modules/react-native/Libraries/Animated/animations/Animation.js` | 2.27 KB | 2.11 KB | 📉 -165 Bytes |
 
 _...and 218 more (use `--limit` to show more)._
 

@@ -3,9 +3,9 @@
 |  | Before | After | Δ |
 | --- | ---: | ---: | ---: |
 | **Platform** | ios | ios |  |
-| **Total size** | 912.12 KB | 939 KB | 📈 +26.89 KB (+2.95%) |
-| **Modules** | 542 | 554 | +12 |
-| **Packages** | 24 | 24 | 0 |
+| **Total size** | 914.14 KB | 941.03 KB | 📈 +26.89 KB (+2.94%) |
+| **Modules** | 543 | 555 | +12 |
+| **Packages** | 25 | 25 | 0 |
 
 ### 📦 Packages
 
@@ -81,7 +81,7 @@
 | `node_modules/react-native/Libraries/TurboModule/TurboModuleRegistry.js` | 720 Bytes | 619 Bytes | 📉 -101 Bytes |
 | `__runtime__` | 4.64 KB | 4.72 KB | 📈 +83 Bytes |
 | `node_modules/react-native/Libraries/Pressability/usePressability.js` | 471 Bytes | 547 Bytes | 📈 +76 Bytes |
-| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.76 KB | 1.82 KB | 📈 +65 Bytes |
+| `node_modules/react-native/src/private/components/virtualview/VirtualView.js` | 1.82 KB | 1.88 KB | 📈 +65 Bytes |
 | `node_modules/react-native/Libraries/Utilities/Appearance.js` | 1017 Bytes | 1.04 KB | 📈 +52 Bytes |
 | `node_modules/react-native/Libraries/Core/setUpPerformance.js` | 271 Bytes | 322 Bytes | 📈 +51 Bytes |
 | `node_modules/react-native/src/private/webapis/dom/nodes/ReadOnlyText.js` | 410 Bytes | 459 Bytes | 📈 +49 Bytes |

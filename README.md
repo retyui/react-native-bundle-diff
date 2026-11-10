@@ -21,24 +21,24 @@ xychart-beta
     y-axis "Size (KB)" 700 --> 1020
     line [736.76, 708.34, 715.76, 761.1, 779.73, 815.74, 844.84, 844.03, 861.42, 862.13, 887.52, 941.55, 930.46, 948.88, 954.5, 983.93, 952.38, 956.5, 849.98, 849.2, 855.49, 732.85]
     line [738.14, 710.18, 717.28, 763.61, 783.35, 819.87, 850.9, 850.15, 867.27, 869.02, 894.03, 946.18, 934.89, 953.62, 962.44, 992.06, 959.61, 960.88, 854.99, 854.54, 859.42, 736.54]
-    line [830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 857.41, 906.45, 895.6, 905.46, 912.12, 939, 912.47, 915.05, 807.46, 766.79, 766.79, 766.79]
-    line [836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 863.19, 910.89, 899.77, 909.72, 919.53, 946.61, 919.89, 919.85, 812.62, 772.36, 772.36, 772.36]
+    line [830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 830.81, 857.41, 906.45, 895.6, 907.48, 914.14, 941.03, 914.31, 916.9, 809.3, 768.63, 793.2, 791.99]
+    line [836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 836.66, 863.19, 910.89, 899.77, 911.75, 921.56, 948.63, 921.73, 921.69, 814.46, 774.2, 798.34, 796.68]
 ```
 
 🔵 Metro `ios` · 🟢 Metro `android` · 🟠 Re.Pack `ios` · 🟣 Re.Pack `android`
 
-Re.Pack is measured on `0.77.x` – `0.87.x` only; outside that range its lines repeat the nearest measured value.
+Re.Pack is measured from `0.77.x`; before that its lines repeat the `0.77.x` value.
 
 | Bundler | Platform | First | Last | Overall Δ | Peak |
 | --- | --- | ---: | ---: | ---: | ---: |
 | Metro | `ios` | 736.76 KB (`0.68.x`) | 732.85 KB (`0.89.x`) | 📉 -3.91 KB (-0.53%) | 983.93 KB (`0.83.x`) |
 | Metro | `android` | 738.14 KB (`0.68.x`) | 736.54 KB (`0.89.x`) | 📉 -1.59 KB (-0.22%) | 992.06 KB (`0.83.x`) |
-| Re.Pack | `ios` | 830.81 KB (`0.77.x`) | 766.79 KB (`0.87.x`) | 📉 -64.02 KB (-7.71%) | 939 KB (`0.83.x`) |
-| Re.Pack | `android` | 836.66 KB (`0.77.x`) | 772.36 KB (`0.87.x`) | 📉 -64.3 KB (-7.69%) | 946.61 KB (`0.83.x`) |
+| Re.Pack | `ios` | 830.81 KB (`0.77.x`) | 791.99 KB (`0.89.x`) | 📉 -38.82 KB (-4.67%) | 941.03 KB (`0.83.x`) |
+| Re.Pack | `android` | 836.66 KB (`0.77.x`) | 796.68 KB (`0.89.x`) | 📉 -39.98 KB (-4.78%) | 948.63 KB (`0.83.x`) |
 
 ### Reports
 
-Size change between consecutive versions. Each link opens the full report: size change, added and removed modules, and package version bumps. Re.Pack is only measured on `0.77.x` – `0.87.x` (see [Supported versions](#supported-versions)).
+Size change between consecutive versions. Each link opens the full report: size change, added and removed modules, and package version bumps. Re.Pack is only measured from `0.77.x` (see [Supported versions](#supported-versions)).
 
 | From → To | Metro iOS | Metro Android | Re.Pack iOS | Re.Pack Android |
 | --- | --- | --- | --- | --- |
@@ -54,22 +54,22 @@ Size change between consecutive versions. Each link opens the full report: size 
 | `0.77.x` → `0.78.x` | [📈 +25.39 KB (+2.95%)](./reports/metro/RN77-RN78-ios.md) | [📈 +25.01 KB (+2.88%)](./reports/metro/RN77-RN78-android.md) | [📈 +26.6 KB (+3.2%)](./reports/repack/RN77-RN78-ios.md) | [📈 +26.52 KB (+3.17%)](./reports/repack/RN77-RN78-android.md) |
 | `0.78.x` → `0.79.x` | [📈 +54.03 KB (+6.09%)](./reports/metro/RN78-RN79-ios.md) | [📈 +52.15 KB (+5.83%)](./reports/metro/RN78-RN79-android.md) | [📈 +49.03 KB (+5.72%)](./reports/repack/RN78-RN79-ios.md) | [📈 +47.7 KB (+5.53%)](./reports/repack/RN78-RN79-android.md) |
 | `0.79.x` → `0.80.x` | [📉 -11.09 KB (-1.18%)](./reports/metro/RN79-RN80-ios.md) | [📉 -11.29 KB (-1.19%)](./reports/metro/RN79-RN80-android.md) | [📉 -10.85 KB (-1.2%)](./reports/repack/RN79-RN80-ios.md) | [📉 -11.12 KB (-1.22%)](./reports/repack/RN79-RN80-android.md) |
-| `0.80.x` → `0.81.x` | [📈 +18.42 KB (+1.98%)](./reports/metro/RN80-RN81-ios.md) | [📈 +18.73 KB (+2%)](./reports/metro/RN80-RN81-android.md) | [📈 +9.86 KB (+1.1%)](./reports/repack/RN80-RN81-ios.md) | [📈 +9.96 KB (+1.11%)](./reports/repack/RN80-RN81-android.md) |
-| `0.81.x` → `0.82.x` | [📈 +5.62 KB (+0.59%)](./reports/metro/RN81-RN82-ios.md) | [📈 +8.82 KB (+0.92%)](./reports/metro/RN81-RN82-android.md) | [📈 +6.66 KB (+0.74%)](./reports/repack/RN81-RN82-ios.md) | [📈 +9.81 KB (+1.08%)](./reports/repack/RN81-RN82-android.md) |
-| `0.82.x` → `0.83.x` | [📈 +29.44 KB (+3.08%)](./reports/metro/RN82-RN83-ios.md) | [📈 +29.63 KB (+3.08%)](./reports/metro/RN82-RN83-android.md) | [📈 +26.89 KB (+2.95%)](./reports/repack/RN82-RN83-ios.md) | [📈 +27.08 KB (+2.94%)](./reports/repack/RN82-RN83-android.md) |
-| `0.83.x` → `0.84.x` | [📉 -31.55 KB (-3.21%)](./reports/metro/RN83-RN84-ios.md) | [📉 -32.46 KB (-3.27%)](./reports/metro/RN83-RN84-android.md) | [📉 -26.53 KB (-2.83%)](./reports/repack/RN83-RN84-ios.md) | [📉 -26.72 KB (-2.82%)](./reports/repack/RN83-RN84-android.md) |
+| `0.80.x` → `0.81.x` | [📈 +18.42 KB (+1.98%)](./reports/metro/RN80-RN81-ios.md) | [📈 +18.73 KB (+2%)](./reports/metro/RN80-RN81-android.md) | [📈 +11.89 KB (+1.33%)](./reports/repack/RN80-RN81-ios.md) | [📈 +11.98 KB (+1.33%)](./reports/repack/RN80-RN81-android.md) |
+| `0.81.x` → `0.82.x` | [📈 +5.62 KB (+0.59%)](./reports/metro/RN81-RN82-ios.md) | [📈 +8.82 KB (+0.92%)](./reports/metro/RN81-RN82-android.md) | [📈 +6.66 KB (+0.73%)](./reports/repack/RN81-RN82-ios.md) | [📈 +9.81 KB (+1.08%)](./reports/repack/RN81-RN82-android.md) |
+| `0.82.x` → `0.83.x` | [📈 +29.44 KB (+3.08%)](./reports/metro/RN82-RN83-ios.md) | [📈 +29.63 KB (+3.08%)](./reports/metro/RN82-RN83-android.md) | [📈 +26.89 KB (+2.94%)](./reports/repack/RN82-RN83-ios.md) | [📈 +27.08 KB (+2.94%)](./reports/repack/RN82-RN83-android.md) |
+| `0.83.x` → `0.84.x` | [📉 -31.55 KB (-3.21%)](./reports/metro/RN83-RN84-ios.md) | [📉 -32.46 KB (-3.27%)](./reports/metro/RN83-RN84-android.md) | [📉 -26.71 KB (-2.84%)](./reports/repack/RN83-RN84-ios.md) | [📉 -26.9 KB (-2.84%)](./reports/repack/RN83-RN84-android.md) |
 | `0.84.x` → `0.85.x` | [📈 +4.11 KB (+0.43%)](./reports/metro/RN84-RN85-ios.md) | [📈 +1.27 KB (+0.13%)](./reports/metro/RN84-RN85-android.md) | [📈 +2.58 KB (+0.28%)](./reports/repack/RN84-RN85-ios.md) | [📉 -38 Bytes (0%)](./reports/repack/RN84-RN85-android.md) |
-| `0.85.x` → `0.86.x` | [📉 -106.51 KB (-11.14%)](./reports/metro/RN85-RN86-ios.md) | [📉 -105.89 KB (-11.02%)](./reports/metro/RN85-RN86-android.md) | [📉 -107.59 KB (-11.76%)](./reports/repack/RN85-RN86-ios.md) | [📉 -107.23 KB (-11.66%)](./reports/repack/RN85-RN86-android.md) |
-| `0.86.x` → `0.87.x` | [📉 -804 Bytes (-0.09%)](./reports/metro/RN86-RN87-ios.md) | [📉 -456 Bytes (-0.05%)](./reports/metro/RN86-RN87-android.md) | [📉 -40.67 KB (-5.04%)](./reports/repack/RN86-RN87-ios.md) | [📉 -40.26 KB (-4.95%)](./reports/repack/RN86-RN87-android.md) |
-| `0.87.x` → `0.88.x` | [📈 +6.29 KB (+0.74%)](./reports/metro/RN87-RN88-ios.md) | [📈 +4.88 KB (+0.57%)](./reports/metro/RN87-RN88-android.md) | — | — |
-| `0.88.x` → `0.89.x` | [📉 -122.63 KB (-14.34%)](./reports/metro/RN88-RN89-ios.md) | [📉 -122.87 KB (-14.3%)](./reports/metro/RN88-RN89-android.md) | — | — |
+| `0.85.x` → `0.86.x` | [📉 -106.51 KB (-11.14%)](./reports/metro/RN85-RN86-ios.md) | [📉 -105.89 KB (-11.02%)](./reports/metro/RN85-RN86-android.md) | [📉 -107.59 KB (-11.73%)](./reports/repack/RN85-RN86-ios.md) | [📉 -107.23 KB (-11.63%)](./reports/repack/RN85-RN86-android.md) |
+| `0.86.x` → `0.87.x` | [📉 -804 Bytes (-0.09%)](./reports/metro/RN86-RN87-ios.md) | [📉 -456 Bytes (-0.05%)](./reports/metro/RN86-RN87-android.md) | [📉 -40.67 KB (-5.03%)](./reports/repack/RN86-RN87-ios.md) | [📉 -40.26 KB (-4.94%)](./reports/repack/RN86-RN87-android.md) |
+| `0.87.x` → `0.88.x` | [📈 +6.29 KB (+0.74%)](./reports/metro/RN87-RN88-ios.md) | [📈 +4.88 KB (+0.57%)](./reports/metro/RN87-RN88-android.md) | [📈 +24.56 KB (+3.2%)](./reports/repack/RN87-RN88-ios.md) | [📈 +24.14 KB (+3.12%)](./reports/repack/RN87-RN88-android.md) |
+| `0.88.x` → `0.89.x` | [📉 -122.63 KB (-14.34%)](./reports/metro/RN88-RN89-ios.md) | [📉 -122.87 KB (-14.3%)](./reports/metro/RN88-RN89-android.md) | [📉 -1.21 KB (-0.15%)](./reports/repack/RN88-RN89-ios.md) | [📉 -1.66 KB (-0.21%)](./reports/repack/RN88-RN89-android.md) |
 
 ## Supported versions
 
 | Bundler | React Native versions | Notes |
 | --- | --- | --- |
 | Metro | `0.68.x` – `0.89.x` | Every version in `rn-versions.json` |
-| Re.Pack | `0.77.x` – `0.87.x` | Re.Pack's [minimum is 0.77](https://re-pack.dev/docs/getting-started/quick-start). `0.88.x` doesn't work with Re.Pack yet |
+| Re.Pack | `0.77.x` – `0.89.x` | Re.Pack's [minimum is 0.77](https://re-pack.dev/docs/getting-started/quick-start) |
 
 The Re.Pack range is set in [`scripts/get-versions.mjs`](./scripts/get-versions.mjs). From RN `0.79`, Re.Pack's `enablePackageExports` is turned on to match Metro's default module resolution, so the two bundlers resolve the same files.
 
